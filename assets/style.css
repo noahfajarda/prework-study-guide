@@ -1,0 +1,5 @@
+* {
+    margin: 0; /* margin = how much **space** we want **outside** element(0 is no space)*/
+    padding: 0; /* padding = adds space around content **inside** element, resizes entire element*/
+    /*refer to 'css box model' to remember*/
+}
