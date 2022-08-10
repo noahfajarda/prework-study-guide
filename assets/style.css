@@ -29,3 +29,15 @@ p {
     text-align: center;
     font-size: 30px;
 }
+.card {
+    width: 80%;
+    margin: 40px auto;
+    border: 5px solid lightgreen;
+    box-shadow: 5px 10px #888888;
+}
+/* notes for css:
+-- '.' before 'card' == class selector: allow HTML to access elements
+-- 'width: 80%' == gets 80% of available width of webpage
+-- 'margin: 40px auto' == gives margin of 40px to 'top and bottom', auto is 'left and right'
+-- 'border: 5px solid gray' == assigns border, 5px size, color: solid gray
+-- 'box-shadow' == adds shadow effects around frame, utilizing x (5px) and y (10px)
