@@ -1,3 +1,5 @@
+// Javascript == allows user interaction with website
+
 // initialize variable "type <string>"
 var topics = "HTML, CSS, Git, Javascript";
 
