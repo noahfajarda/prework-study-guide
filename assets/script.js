@@ -38,25 +38,31 @@ for(var i = 0; i < shapes.length; i++) { // use 'for' loop and '.length' to loop
 
 // 3.4.3 Functions
 
+// list all items with for loop
 function listTopics(topics) {
-    var topics = ["HTML", "CSS", "Git", "Javascript"]; // change later
     for(var i = 0; i < topics.length; i++) {
         console.log(topics[i]);
     }
 }
 
+// generates random topic based on random indices
+var randomTopic = topics[Math.floor(Math.random() * topics.length)];
+
 function selectTopic() {
-    var topic = "CSS";         // change later
-    if (topic === "HTML") {     // conditional checking statement has 3 '='
+    if (randomTopic === "HTML") {     // conditional checking statement has 3 '='
         console.log("Let's study HTML!");
-    } else if (topic === 'CSS') {
+    } else if (randomTopic === 'CSS') {   // checks topics array even if undefined in function
     console.log("Let's study CSS!");
-    } else if (topic === 'Git') {
+    } else if (randomTopic === 'Git') {
     console.log("Let's study Git!");
-    } else if (topic === 'JavaScript') {
+    } else if (randomTopic === 'JavaScript') {
     console.log("Let's study JavaScript!");
     } else {
     console.log('Please try again!');
     }
 }
-selectTopic();
+
+console.log("Here are the topics we learned through Prework:");
+listTopics(topics);   // lists all topics listed; var initialized in line 4
+console.log("Which topic should we study first?");
+selectTopic();        // generates random topic
