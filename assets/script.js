@@ -24,19 +24,6 @@ if (hasFuel === false) {    // conditional statement
     hasFuel = true;
 }
 
-/*
-if (topic === "HTML") {     // conditional checking statement has 3 '='
-    console.log("Let's study HTML!");
-} else if (topic === 'CSS') {
-  console.log("Let's study CSS!");
-} else if (topic === 'Git') {
-  console.log("Let's study Git!");
-} else if (topic === 'JavaScript') {
-  console.log("Let's study JavaScript!");
-} else {
-  console.log('Please try again!');
-}*/
-
 
 // 3.3.5 Arrays & for loops
 
@@ -49,6 +36,27 @@ for(var i = 0; i < shapes.length; i++) { // use 'for' loop and '.length' to loop
     console.log(shapes[i]);
 }
 
-for(var i = 0; i < topics.length; i++) {
-    console.log(topics[i]);
+// 3.4.3 Functions
+
+function listTopics(topics) {
+    var topics = ["HTML", "CSS", "Git", "Javascript"]; // change later
+    for(var i = 0; i < topics.length; i++) {
+        console.log(topics[i]);
+    }
 }
+
+function selectTopic() {
+    var topic = "CSS";         // change later
+    if (topic === "HTML") {     // conditional checking statement has 3 '='
+        console.log("Let's study HTML!");
+    } else if (topic === 'CSS') {
+    console.log("Let's study CSS!");
+    } else if (topic === 'Git') {
+    console.log("Let's study Git!");
+    } else if (topic === 'JavaScript') {
+    console.log("Let's study JavaScript!");
+    } else {
+    console.log('Please try again!');
+    }
+}
+selectTopic();
